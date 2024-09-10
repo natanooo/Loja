@@ -1,0 +1,47 @@
+.Compre{
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Compre h1{
+    font-size: 5vw;
+    font-weight: 200;
+}
+.Compre a{
+    margin-top: 2vw;
+    width: 524px;
+    height: 192px;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.Compre h2{
+    font-size: 40px;
+    font-weight: 0;
+}
+.Compre h3{
+    margin-top: 2vw;
+    font-size: 3vw;
+    font-weight: 200;
+    text-align: center;
+}
+
+.Compre a:hover{
+    transform: scale(0.94);
+    transition: 0.2s;
+}
+@media (max-width: 600px){
+    .Compre a{
+        width: 60vw;
+        height: 20vw;
+        border-radius: 5vw;
+    }
+    .Compre h2{
+        font-size: 4vw;
+    }
+}

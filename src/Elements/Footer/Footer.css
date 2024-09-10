@@ -1,0 +1,17 @@
+.Footer{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #D9D9D9;
+    width: 96vw;
+}
+.Footer img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.Footer h1{
+    font-size: 2vw;
+    font-weight: 200;
+}
+.Footer a{
+    color: black;
+}

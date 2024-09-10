@@ -1,0 +1,175 @@
+.Body {
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  position: relative;
+}
+.Content-Nav{
+  display: flex;
+  align-items: center;
+}
+.Content-Nav p{
+  font-weight: 600;
+  font-size: 25px;
+}
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98vw;
+  height: 105px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  z-index: 1;
+}
+.Logo {
+  height: 8vw;
+  width: 8vw;
+}
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+}
+.Navbar .lli {
+  margin-left: 38px;
+}
+.Navbar li {
+  cursor: pointer;
+}
+.Menu {
+  position: fixed;
+  background-color: #d9d9d9;
+  width: 60vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  z-index: 2;
+}
+
+.Menu li {
+  list-style: none;
+  font-size: 4vh;
+  margin-top: 7vh;
+  cursor: pointer;
+}
+
+.Menu .lli {
+  margin-top: 30vh;
+}
+
+.EMenu {
+  position: fixed;
+  background-color: #0000000f;
+  width: 40vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 2;
+}
+
+.Button-menu {
+  display: none;
+  width: 43px;
+  cursor: pointer;
+}
+.Close-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+.Navbar li:hover,
+.Menu li:hover {
+  transform: scale(1.03);
+  transition: 0.9s;
+}
+.Navbar li,
+.Menu li {
+  transition: 0.9s;
+}
+@media (min-width: 600px) {
+  .Menu,
+  .EMenu,
+  .Button-menu {
+    display: none !important;
+    position: fixed;
+  }
+}
+@media (min-width: 601px) and (max-width: 1143px) {
+  .Navbar {
+    width: 100vw;
+  }
+  .Logo {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 2vw;
+  }
+  .Navbar ul {
+    font-size: 14px;
+    margin-right: 4vw; /* ou qualquer tamanho que desejar */
+  }
+}
+@media (max-width: 600px) {
+  .Navbar {
+    width: 100vw;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .Navbar ul {
+    display: none;
+  }
+  .Logo {
+    width: 12vw;
+    height: 12vw;
+    margin-left: 6vw;
+  }
+  .Button-menu {
+    display: block;
+    margin-right: 6vw;
+  }
+}
+@media (max-width: 550px) {
+  .Menu li {
+    font-size: 4vw;
+    margin-top: 9vh;
+    cursor: pointer;
+  }
+  .Menu .lli {
+    margin-top: 20vh;
+  }
+  .Close-menu {
+    margin-top: 2vw;
+    margin-right: 4vw;
+  }
+  .Logo {
+    left: 0px;
+  }
+}
+@media (max-width: 230px) {
+  .Logo {
+    width: 60vw;
+    height: 16vw;
+  }
+  .Close-menu,
+  .Button-menu {
+    width: 16vw;
+    height: 16vw;
+    right: 10vw;
+    top: 10w;
+  }
+}

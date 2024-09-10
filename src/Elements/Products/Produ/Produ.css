@@ -1,0 +1,111 @@
+.Produ {
+  width: 309px;
+  height: 384px;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+.Produ img {
+  width: 309px;
+  height: 316px;
+  transition: 0.5s;
+  border-radius: 10px 10px 0 0;
+}
+.Produ h1{
+  font-size: 25px;
+  font-weight: 300;
+  transition: 0.5s;
+  color: black;
+}
+.Produ h2{
+  font-size: 15px;
+  font-weight: 500;
+  color: #474646;
+  transition: 0.5s;
+}
+.Produ .Cima{
+  display: flex;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 30px;
+}
+.Produ span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #474646 solid;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  color: black;
+}
+.Produ:hover {
+  background-color: #d9d9d9;
+  transition: 0.5s;
+  border-radius: 10px 10px 10px 10px;
+}
+.Produ:hover h1,.Produ:hover h2{
+  opacity: 0;
+  transition: 0.5s;
+}
+.Produ:hover img{
+  transform: scale(0.9);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Produ:hover .Cima{
+  display:flex;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 1;
+}
+@media (min-width: 600px) and (max-width:1060px){
+  .Produ{
+    width: 28vw;
+    height: 34.17vw;
+  }
+  .Produ img{
+    width: 28vw;
+    height: 28.67vw;
+  }
+  .Produ .Cima{
+    top:29.5vw;
+  }
+  .Produ span{
+    width: 16vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px){
+  .Produ{
+    width: 40.3vw;
+    height: 55.46vw;
+  }
+  .Produ img{
+    width: 40.3vw;
+    height: 41.97vw;
+  }
+  .Produ .Cima{
+    top:43vw;
+  }
+  .Produ span{
+    width: 30vw;
+    height: 8vw;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 400px){
+    .Produ h1{
+      font-size: 4vw;
+    }
+    .Produ h2{
+      font-size: 3vw;
+    }
+}
